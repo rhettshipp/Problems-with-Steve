@@ -15,7 +15,4 @@ with open(filename) as f:
 unique_characters = list(set(total_characters))
 print total_characters
 print unique_characters
-"""
-problem - each line is being imported as its own list...
-that makes the list immutable (i can't use the set command)
-"""
+
