@@ -1,4 +1,3 @@
-
 guest_list = []
 filename = '/Users/rhettshipp1/Desktop/Data-Files/Guest_list.txt'
 with open(filename) as f:

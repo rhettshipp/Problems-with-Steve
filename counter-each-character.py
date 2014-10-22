@@ -10,9 +10,11 @@ total_characters = []
 filename = '/Users/rhettshipp1/Desktop/Data-Files/random-data.txt'
 with open(filename) as f:
     for line in f:
-        print line
-        total_characters.append(list(line))       
+        for item in line:
+            total_characters.append(item)    
+unique_characters = list(set(total_characters))
 print total_characters
+print unique_characters
 """
 problem - each line is being imported as its own list...
 that makes the list immutable (i can't use the set command)
