@@ -15,4 +15,5 @@ with open(filename) as f:
 unique_characters = list(set(total_characters))
 print total_characters
 print unique_characters
-
+unique_characters.pop("\n")
+print unique_characters
