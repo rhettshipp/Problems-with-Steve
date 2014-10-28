@@ -1,5 +1,5 @@
 result = []
-with open('filename') as f:
+with open('/Users/rhettshipp1/Desktop/Data-Files/throwawaydata.txt') as f:
     for line in f:
         for i, char in enumerate(line):
             if i+1 > len(result):
