@@ -23,10 +23,12 @@ with open('/Users/rhettshipp1/Desktop/Data-Files/xycoordinates.txt') as f:
     f.next()    
     for line in f:
         n += 1
-        xtot += float(line.split()[0])
-        ytot += float(line.split()[1])
-        xytot += float(line.split()[0])*float(line.split()[1])
-        xsquaretot += float(line.split()[0])**2
+        x = float(line.split()[0])
+        y = float(line.split()[1])
+        xtot += x
+        ytot += y
+        xytot += x*y
+        xsquaretot += x**2
 ybar = ytot / n
 xbar = xtot / n
 m = ((n*xytot) - (xtot*ytot)) / ((n*xsquaretot) - (xtot**2))
